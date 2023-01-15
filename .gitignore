@@ -1,0 +1,8 @@
+venv/
+.idea/
+.DS_Store
+build/
+dist/
+*.spec
+wallets.txt
+config.json

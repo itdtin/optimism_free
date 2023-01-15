@@ -1,0 +1,85 @@
+import dotenv
+from app.quests.abis import TOKEN_ABI, STARGATE_ROUTER_ABI, \
+    SYNAPSE_POOL_ABI, RUBICON_ROUTER_ABI, RUBICON_POOL_ABI, \
+    VELODROME_ROUTER_ABI, VELODROME_PAIR_ABI, GRANARY_USDC_LP_ABI, \
+    GRANARY_POOL_ABI, PIKA_POSITION_MANAGER_ABI, PIKA_PERP_V3_ABI, \
+    POOL_TOGETHER_ABI, PERP_USDC_VAULT_ABI, PERP_ROUTER_ABI, UNI_ROUTER_ABI, POLINOMIAL_ABI, POLINOMIAL_WITH_ABI, \
+    QUIX_SEAPORT_ABI, WETH_ABI
+
+dotenv.load_dotenv()
+
+all_config_tests = ["stargate", "uni", "synapse", "rubicon", "velodrome", "granary", "perp", "pika", "pool_together",
+                    "polynomial", "quix"]
+
+arbi_quests = ["stargate"]
+fast_mint = ["uni", "synapse", "rubicon", "velodrome", "granary", "perp"]
+with_lock_quests = ["pika", "pool_together"]  # there is no polynomial cause it runs separately
+to_withdraw_quests = ["pika", "pool_together", "polynomial"]
+pack_7_quests_names = ["uni", "synapse", "rubicon", "velodrome", "granary", "perp"] # pika will added and running last
+
+separate_poly = "polynomial"
+separate_quix = "quix"
+separate_pika = "pika"
+
+pack_7_name = "pack_7"
+pack_9_name = "pack_9"
+quix_name = "quix"
+
+
+ATTEMTS_TO_NODE_REQUEST = 19
+ATTEMTS_TO_API_REQUEST = 19
+stg_nominator = 1.5
+USDC_AMOUNT_TO_7_PACK_MIN = 54.1
+USDC_AMOUNT_TO_7_PACK_MAX = 54.9
+ARBITRUM: str = "https://arb-mainnet.g.alchemy.com/v2/aFjqA3mR0fMDkPR8lMF2QnjNQPNi9Jcm"
+OPTIMISM_URL: str = "https://rpc.ankr.com/optimism"
+
+ARBITRUM_CHAIN_ID: int = 42161
+STARGATE_ROUTER_ARBI: str = "0x53bf833a5d6c4dda888f69c22c88c9f356a41614"
+STARGATER_ROUTER_OPTI: str = "0xB0D502E938ed5f4df2E681fE6E419ff29631d62b"
+
+OPTIMISM_CHAIN_ID: int = 69
+OP: str = "0x4200000000000000000000000000000000000042"
+
+USDC_OPTIMISM: str = "0x7F5c764cBc14f9669B88837ca1490cCa17c31607"
+USDC_ARBITRUM: str = "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+USDC_DECIMALS: str = "mwei"
+
+ETH: str = "0x0000000000000000000000000000000000000000"
+ETH_DECIMALS: str = "ether"
+WETH: str = "0x4200000000000000000000000000000000000006"
+
+
+SYNAPSE_POOL: str = "0xf44938b0125a6662f9536281ad2cd6c499f22004"
+
+RUBICON_ROUTER: str = "0x7af14adc8aea70f063c7ea3b2c1ad0d7a59c4bff"
+RUBICON_OP_POOL: str = "0x574a21fe5ea9666dbca804c9d69d8caf21d5322b"
+
+VELODROME_ROUTER: str = "0x9c12939390052919af3155f41bf4160fd3666a6f"
+VELODROME_OP_USDC_PAIR: str = "0x47029bc8f5CBe3b464004E87eF9c9419a48018cd"
+
+GRANARY_LENDING_POOL: str = "0x8fd4af47e4e63d1d2d45582c3286b4bd9bb95dfe"
+GRANARY_USDC_LP: str = "0x7A0FDDBA78FF45D353B1630B77f4D175A00df0c0"
+GRANARY_BORROW_LP: str = "0xb271973b367E50fcDE5Ee5e426944C37045Dd0bf"
+
+PIKA_POSITION_MANAGER: str = "0x8adD31BC901214A37f3bb676Cb90AD62B24fd9a5"
+PIKA_PERP_V3: str = "0xD5A8f233CBdDb40368D55C3320644Fb36e597002"
+
+POOL_TOGETHER_POOL: str = "0x79Bc8bD53244bC8a9C8c27509a2d573650A83373"
+
+BEETHOVEN_ETH_POOL: str = "0xba12222222228d8ba445958a75a0704d566bf2c8"
+BEETHOVEN_ETH_LP_STAKING_POOL: str = "0x38f79beFfC211c6c439b0A3d10A0A673EE63AFb4"
+BEETHOVEN_ETH_RETH_LP: str = "0x4fd63966879300cafafbb35d157dc5229278ed23"
+BEETHOVEN_ETH_RETH_GAUGE_LP: str = "0x38f79beFfC211c6c439b0A3d10A0A673EE63AFb4"
+
+PERP_USDC_VAULT: str = "0xAD7b4C162707E0B2b5f6fdDbD3f8538A5fbA0d60"
+PERP_ROUTER: str = "0x82ac2CE43e33683c58BE4cDc40975E73aA50f459"
+
+POLINOMIAL_VAULT_dep: str = "0xef5f0c5d39ad78b5fd3bdb0e55704c399ee4f04a"
+POLINOMIAL_VAULT: str = "0xb28Df1b71a5b3a638eCeDf484E0545465a45d2Ec"
+POLYNOMIAL_LP: str = "0xd81AbCDD67c7eb1c67C56C10A2077938037E4b06"
+INCH_ROUTER: str = "0x1111111254760F7ab3F16433eea9304126DCd199"
+UNISWAP_ROUTER_V3: str = "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45"
+
+
+

@@ -1,0 +1,2 @@
+
+pyinstaller --noconfirm --onefile --windowed --icon "./favicon.ico"  "./main.py" -n optimismQuests
