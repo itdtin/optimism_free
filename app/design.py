@@ -68,7 +68,8 @@ STRINGS = {
     }
 }
 quests_choices = [
-    "7 Quests: Uniswap, Velodrome, Synapse, Rubicon, Pika, Perp, Granary(required 0.046 ETH(~55$ + gas) in OPTIMISM)",
+    "7 Quests: Uniswap, Velodrome, Synapse, Rubicon, Pika, Perp, Granary(required 0.046 ETH(~55$ + gas) in OPTIMISM)\n"
+    "Pika quest require lock for 3 days, but you can mint the NFT immediately",
 ]
 
 
