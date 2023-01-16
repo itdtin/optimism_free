@@ -6,3 +6,4 @@ dist/
 *.spec
 wallets.txt
 config.json
+**/__pycache__/

@@ -109,7 +109,7 @@ class Window(QMainWindow):
 
         self.ui.wait_btw_quests.setText(STRINGS[LANGUAGE]["wait_btw_quests"])
         self.ui.min_btw_quests.setText(STRINGS[LANGUAGE]["wait_from"])
-        self.ui.min_btw_quests.setText(STRINGS[LANGUAGE]["wait_to"])
+        self.ui.max_btw_quests.setText(STRINGS[LANGUAGE]["wait_to"])
 
         self.ui.start_btn.setText(STRINGS[LANGUAGE]["start_btn"])
         self.ui.finish_quests.setText(STRINGS[LANGUAGE]["finish_quests"])
